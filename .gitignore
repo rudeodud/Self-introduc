@@ -1,0 +1,12 @@
+
+## 📄 `.gitignore`
+
+```gitignore
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+
+# Logs
+*.log

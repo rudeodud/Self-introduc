@@ -1,27 +1,66 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8" />
-    <title>My Self Introduction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경대영 | Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-    <div class="container">
-        <img src="assets/profile.png" alt="profile" class="profile" />
-        <h1>안녕하세요 경대영 입니다 👋</h1>
-        <h2>백엔드 / 클라우드 엔지니어</h2>
+    <!-- 상단 프로필 섹션 -->
+    <section class="profile-section">
+        <div class="container profile-container">
+            <img src="assets/profile.png" alt="profile" class="profile-img" />
+            <div class="profile-text">
+                <h1>안녕하세요, <strong>경대영</strong>입니다 👋</h1>
+                <h2>백엔드 / 클라우드 엔지니어</h2>
+                <p>
+                    AWS, Docker, Terraform을 활용한 인프라 자동화에 열정을 가지고 있으며,<br />
+                    효율적이고 안정적인 시스템 운영을 지향합니다.
+                </p>
+                <div class="tags">
+                    <span>#AWS</span> <span>#Docker</span> <span>#Terraform</span> <span>#Python</span>
+                </div>
+                <div>
+                    <span><img src="assets/images.jpeg"></span> <span><img src="assets/images.jpeg"></span> <span><img src="assets/images.jpeg"></span>
+                </div> 
+            </div>
+        </div>
+    </section>
 
-        <p>
-            AWS, Docker, Terraform을 공부하며<br />
-            인프라 자동화와 운영에 관심이 많습니다.
-        </p>
-
-        <button onclick="sayHello()">Click Me</button>
-    </div>
+    <!-- 하단 프로젝트 섹션 -->
+    <section class="projects-section">
+        <div class="container">
+            <h3 class="section-title">My Projects</h3>
+            <div class="project-grid">
+                <!-- 프로젝트 카드 1 -->
+                <div class="project-card" onclick="window.open('https://github.com')">
+                    <div class="card-content">
+                        <h4>Terraform IaC Project</h4>
+                        <p>AWS 인프라를 코드로 관리하여 구축 시간을 50% 단축했습니다.</p>
+                        <span class="view-btn">자세히 보기</span>
+                    </div>
+                </div>
+                <!-- 프로젝트 카드 2 -->
+                <div class="project-card" onclick="window.open('https://github.com')">
+                    <div class="card-content">
+                        <h4>Docker Microservices</h4>
+                        <p>도커를 활용한 마이크로서비스 아키텍처 환경 구축 프로젝트입니다.</p>
+                        <span class="view-btn">자세히 보기</span>
+                    </div>
+                </div>
+                <!-- 프로젝트 카드 3 -->
+                <div class="project-card" onclick="window.open('https://github.com')">
+                    <div class="card-content">
+                        <h4>Cloud Automation</h4>
+                        <p>GitHub Actions를 이용한 CI/CD 파이프라인 자동화 실습입니다.</p>
+                        <span class="view-btn">자세히 보기</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="js/main.js"></script>
 </body>
-
 </html>
